@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-display {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+/* Custom premium aesthetic utilities */
+.glass-panel {
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-gold {
+  background: rgba(15, 12, 5, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.text-gold {
+  color: #D4AF37;
+}
+
+.bg-gold {
+  background-color: #D4AF37;
+}
+
+.border-gold {
+  border-color: #D4AF37;
+}
+
+/* Animations */
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-4deg);
+  }
+}
+
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 8px rgba(212, 175, 55, 0.1);
+  }
+}
+
+@keyframes glow-button {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+  }
+}
+
+.animate-float-1 {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-reverse 7s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 3s infinite;
+}
+
+.animate-glow-button {
+  animation: glow-button 2.5s infinite;
+}
+
+/* Premium Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Luxury sound option toggle styling */
+.sound-toggle-active {
+  color: #D4AF37;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+}
+

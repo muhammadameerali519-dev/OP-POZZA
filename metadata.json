@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Italy Pizza",
+  "description": "A world-class premium luxury website for Italy Pizza in Gujranwala featuring high-quality menu items, special deals, a shopping cart with WhatsApp checkout, and an intelligent AI pizza assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
